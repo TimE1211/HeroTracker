@@ -12,6 +12,10 @@ class HeroTableTableViewController: UITableViewController
 {
   var heroes = [Hero]()
   
+  let nameDescriptor = NSSortDescriptor(key: "name", ascending: true,
+                                        selector: #selector(NSString.localizedCaseInsensitiveCompare(_:)))
+  //http://chris.eidhof.nl/post/sort-descriptors-in-swift/
+  
   override func viewDidLoad()
   {
     super.viewDidLoad()
@@ -60,7 +64,7 @@ class HeroTableTableViewController: UITableViewController
       {
         let aHero = Hero(heroDictionary: heroDictionary)
         heroes.append(aHero)
-        
+        (heroes as NSArray).sortedArray(using: [nameDescriptor])  //http://chris.eidhof.nl/post/sort-descriptors-in-swift/
       }
     }
     catch let error as NSError
