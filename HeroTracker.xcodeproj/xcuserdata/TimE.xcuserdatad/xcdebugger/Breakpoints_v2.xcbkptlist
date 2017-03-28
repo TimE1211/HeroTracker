@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HeroTableTableViewController.swift"
-            timestampString = "512339762.82285"
+            timestampString = "512342097.753091"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "loadHeroes()"
             landmarkType = "7">
          </BreakpointContent>
